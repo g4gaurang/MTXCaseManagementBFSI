@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #071526;
+  background: #fff;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+button, input, select, textarea { font: inherit; }
+button { touch-action: manipulation; }
+::selection { color: #fff; background: #0a7f83; }
+
+:focus-visible {
+  outline: 3px solid #22b8c2;
+  outline-offset: 3px;
+}
+
+.eyebrow {
+  @apply text-xs font-bold uppercase tracking-[0.18em] text-teal;
+}
+.section-wrap {
+  @apply mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-10 lg:py-28;
+}
+.section-title {
+  @apply mt-4 max-w-4xl font-display text-3xl font-semibold leading-tight tracking-[-0.03em] text-ink sm:text-4xl lg:text-5xl;
+}
+.section-copy {
+  @apply mt-5 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg;
+}
+.panel {
+  @apply rounded-2xl border border-slate-200 bg-white shadow-sm;
+}
+.tab-button {
+  @apply min-h-11 rounded-full border px-4 py-2 text-sm font-semibold transition;
+}
+.tab-button-active {
+  @apply border-teal bg-teal text-white shadow-sm;
+}
+.tab-button-idle {
+  @apply border-slate-300 bg-white text-slate-700 hover:border-teal hover:text-teal;
+}
+.label {
+  @apply mb-2 block text-sm font-semibold text-slate-700;
+}
+.field {
+  @apply min-h-11 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-ink placeholder:text-slate-400 focus:border-teal focus:outline-none focus:ring-2 focus:ring-teal/20;
+}
+.fine-print {
+  @apply text-xs leading-5 text-slate-500;
+}
+.dot-grid {
+  background-image: radial-gradient(rgba(79, 209, 217, .16) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
