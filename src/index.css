@@ -33,6 +33,8 @@ button { touch-action: manipulation; }
 .section-copy {
   @apply mt-5 max-w-3xl text-base leading-7 text-slate-600 sm:text-lg;
 }
+.bg-ink .section-title { @apply text-white; }
+.bg-ink .section-copy { @apply text-slate-300; }
 .panel {
   @apply rounded-2xl border border-slate-200 bg-white shadow-sm;
 }
