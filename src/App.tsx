@@ -380,7 +380,7 @@ function DemoModal({ open, onClose }: { open:boolean; onClose:()=>void }) {
 }
 
 function Footer() {
-  return <footer className="border-t border-slate-800 bg-ink text-slate-400"><div className="mx-auto flex max-w-7xl flex-col justify-between gap-6 px-5 py-9 sm:px-8 md:flex-row md:items-center"><div><span className="font-display text-xl font-bold text-white">MTX</span><p className="mt-2 text-sm">Case Management for BFSI</p></div><div className="text-xs leading-5 md:text-right"><p>Prototype uses fictional information and illustrative product views.</p><p>© {new Date().getFullYear()} MTX. Product demonstration concept.</p></div></div></footer>
+  return <footer className="border-t border-slate-800 bg-ink text-slate-400"><div className="mx-auto grid max-w-7xl gap-6 px-5 py-9 sm:px-8 lg:grid-cols-[.6fr_1.4fr] lg:items-end"><div><span className="font-display text-xl font-bold text-white">MTX</span><p className="mt-2 text-sm">Case Management for BFSI</p></div><div className="space-y-2 text-xs leading-5 lg:text-right"><p>Prototype content uses fictional data and scenarios. MTX supports operational workflows and human decision-making; consequential decisions remain with authorized personnel.</p><p>Institutions are responsible for configuration, validation, access controls, regulatory compliance, and final decisions in applicable jurisdictions.</p><p>Salesforce, Financial Services Cloud, and Service Cloud are trademarks of Salesforce, Inc. No Salesforce endorsement is implied.</p><p>© {new Date().getFullYear()} MTX. Product demonstration concept.</p></div></div></footer>
 }
 
 export default function App() {
