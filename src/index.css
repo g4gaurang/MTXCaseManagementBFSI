@@ -16,6 +16,11 @@ button, input, select, textarea { font: inherit; }
 button { touch-action: manipulation; }
 ::selection { color: #fff; background: #0a7f83; }
 
+.skip-link {
+  @apply fixed left-4 top-4 z-[60] -translate-y-24 rounded-lg bg-white px-4 py-3 font-bold text-ink shadow-panel transition;
+}
+.skip-link:focus { @apply translate-y-0; }
+
 :focus-visible {
   outline: 3px solid #22b8c2;
   outline-offset: 3px;
